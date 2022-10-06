@@ -1,0 +1,19 @@
+try{
+s_pd(s_4l);
+
+}catch(e){_DumpException(e)}
+try{
+var s_SZc=function(a){a.isAvailable()&&(s_ca.silk=s_ca.silk||{},s_ca.silk.s=s_ca.silk.s||{},s_ca.silk.s.sis={},s_ca.silk.s.sis.ca=a.jA.bind(a))};
+
+}catch(e){_DumpException(e)}
+try{
+s_i("dt4g2b");
+
+var s_LGd=function(a){s_G.call(this,a.Ka)};s_r(s_LGd,s_G);s_LGd.hb=s_G.hb;s_LGd.Ea=s_G.Ea;s_LGd.prototype.isAvailable=function(){return!0};
+s_LGd.prototype.jA=function(a){var b=void 0===a?{}:a,c=b.ada;a=b.bga;b=b.nAa;void 0!==c?s_xe({serviceName:"sis",methodName:"ca"}):s_xe({serviceName:"sis",methodName:"caar"});a:switch(b){case 0:b="https://accounts.google.com/ServiceLogin";break a;default:b="https://accounts.google.com/AccountChooser"}c=s_Ld(b,{hl:s_3t(),"continue":c||s_mp().toString()});s_Wb(c,a)};s_wj(s_Lec,s_LGd);
+
+
+s_j();
+
+}catch(e){_DumpException(e)}
+// Google Inc.

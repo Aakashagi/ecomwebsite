@@ -1,0 +1,8 @@
+/* .col{
+    padding: 0 0px;
+}
+*/
+
+.row{
+    --bs-gutter-x:0;
+}

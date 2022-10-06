@@ -1,0 +1,9 @@
+.bgimg:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+  }
+
+
+  .bgg {
+    background: linear-gradient(to right, #00eeff,  #ea5bbf);
+}

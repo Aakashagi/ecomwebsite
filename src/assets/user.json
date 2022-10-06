@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "name": "sxsax",
+      "email": "fvfv",
+      "number": "32e32",
+      "address": "f322",
+      "city": "coim",
+      "state": "fv",
+      "img": "C:\\fakepath\\3rd1.jpg",
+      "id": 28
+    },
+    {
+      "name": "redmi",
+      "price": "11000",
+      "details": "detail",
+      "description": "des",
+      "img": "../../assets/images/1st2.webp",
+      "spectification": "spec",
+      "id": 30
+    }
+  ],
+  "comments": [
+    {
+      "name": "saxs",
+      "email": "admin",
+      "number": "12",
+      "address": "fvfdsv",
+      "state": "sax",
+      "id": 2
+    },
+    {
+      "name": "Aakash",
+      "email": "aakashr@gmail.com",
+      "number": "45678",
+      "address": "sa",
+      "state": "fv",
+      "id": 3
+    }
+  ]
+}

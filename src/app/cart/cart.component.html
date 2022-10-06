@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+    </script>
+
+  <!-- 
+  <div class="back bg-warning">
+    <hr class="mr-3 mt-0">
+    <div class="center bg-white pt-4 ml-3 mr-3">
+      <div class="container">
+        <div class="card">
+          <hr class="p-0 m-0">
+          <div class="row pt-3" *ngFor="let ecom of items">
+            <div class="col-lg-4 col-md-4 col-sm-4 text-center p-3">
+              <img src="{{ecom}}" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-lg-8 col-md-6 col-sm-8">
+              <div class="card-body">
+                <h3 class="card-title">{{ecom.name}}</h3>
+                <h5 class="card-title">{{ecom.price | currency:'INR'}}</h5>
+                <p>{{ecom.details}}</p>
+                <p class="card-text">Coming Soon</p>
+                <button type="button" class="bg-primary btn text-white" [routerLink]="['/menu',ecom.id]">View</button>
+                <a routerLink="/shipping">Shipping Prices</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="back bg-warning">
+    <hr class="mr-3 mt-0">
+    <div class="center bg-white pt-4 ml-3 mr-3">
+      <div class="container">
+        <div *ngIf="true">
+          <div class="card-table">
+            <div class="card-product">
+              <table class="table table responsive">
+                <thead>
+                  <tr>
+                    <th>Sr.no</th>
+                    <th>Sr.no</th>
+                    <th>Sr.no</th>
+                    <th>Sr.no</th>
+                    <th>Sr.no</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td><button>click</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div *ngIf="false">
+    <div class="container">
+      <div class="card">
+        <h4 class="card-title">
+        </h4>
+        <div class="center">
+          <img src="" alt="">
+          <h5>Cart Empty</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+-->
+
+  <app-header></app-header>
+
+  <div class="back bg-warning">
+    <hr class="mr-3 mt-0">
+    <div class="center bg-white pt-4 ml-3 mr-3">
+      <div class="container">
+        <form action="" #detailForm="ngForm" (ngSubmit)="getdetail(detailForm.value)">
+          <div class="form-row">
+            <div class="container">
+              <div class="center" *ngFor="let ecom of items">
+                <div class="card">
+                  <div class="row">
+                    <div class="col-sm-4 text-center p-3">
+                      <img src="{{ecom.img}}" alt="" style="width: 50%;height:400px">
+                    </div>
+                    <div class="col-sm-8 p-3">
+                      <h4>{{ecom.name}}</h4>
+                      <h3>{{ecom.price | currency:'INR'}}</h3>
+                      <p>{{ecom.details}}</p>
+
+                      <button type="button" (click)="deleteone(ecom.id)" class="btn btn-primary text-white"><i class="bi bi-trash"></i>delete</button>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="form-group col-md-6" #detailForm>
+          <label for="inputEmail4">Name</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Name" [(ngModel)]="name">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email" [(ngModel)]="email">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputnumber">Number</label>
+          <input type="text" class="form-control" id="inputnumber" placeholder="Number" [(ngModel)]="number">
+        </div>
+
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" [(ngModel)]="address">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity" [(ngModel)]="city">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputpin">Pincode</label>
+            <input type="text" class="form-control" id="inputpin" [(ngModel)]="pincode">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" [(ngModel)]="gridcheck">
+            <label class="form-check-label" for="gridCheck">
+              Confirm Your Order
+            </label>
+          </div>
+        </div>
+        <button type="submit" [disabled]="!name || !address ||!email ||!pincode || !city || !gridcheck || !number"
+          class="btn btn-primary" (click)="getdetail(detailForm.value)">Sign in</button>
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+
+          <div class="form-control">
+
+            <div class="input-group input-group-lg">
+              <span class="input-group-text">Name</span>
+              <input type="text" class="form-control" name="name" placeholder="Enter your Name" [(ngModel)]="name">
+            </div>
+            <br>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Email</span>
+              <input type="text" class="form-control" name="email" placeholder="Enter your Email" [(ngModel)]="email">
+            </div>
+            <br>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Number</span>
+              <input type="text" class="form-control" name="number" placeholder="Enter your Number"
+                [(ngModel)]="number">
+            </div>
+            <br>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Address</span>
+              <input type="text" class="form-control" name="address" placeholder="Enter your Address"
+                [(ngModel)]="address">
+            </div>
+            <br>
+            <div class="input-group mb-3">
+              <span class="input-group-text">City</span>
+              <input type="text" class="form-control" name="city" placeholder="Enter the city" [(ngModel)]="city">
+            </div>
+            <div class="input-group mb-3" *ngFor="let item of items">
+              <span class="input-group-text">Product Name</span>
+              <input type="text" class="form-control" name="model" placeholder="{{item.name}}" [(ngModel)]="model">
+            </div>
+            <br>
+            <div class="input-group mb-3">
+              <span class="input-group-text">State</span>
+              <input type="text" class="form-control" name="state" placeholder="Enter your State" [(ngModel)]="state">
+            </div>
+            <br>
+
+            <button type="submit" [disabled]="!name || !address ||!email || !number"  class="btn btn-primary"
+              (click)="reset()">Sign in</button>
+          </div>
+
+
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

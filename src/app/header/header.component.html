@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+
+<style>
+    .dropdown:hover .dropdown-menu{
+    display: block;
+
+}
+</style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+        </script>
+
+<div class="full bg-warning text-black" >
+    <nav class="navbar container navbar-expand-lg navbar-light bg-warning pl-5" >
+        <img src="../../assets/images/kindpng_106636.png" alt="" style="width: 3%;">&nbsp;
+        <a class="navbar-brand text-black one"><strong>EasyShop</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse one ml-5" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active mr-3">
+                    <a class="nav-link text-black" routerLink="/menu"><strong>Home</strong> <span class="sr-only">(current)</span></a>
+                </li>
+               
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-black" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Others</strong>
+                    </a>
+                    <div class="dropdown-menu  text-black"  aria-labelledby="navbarDropdown" >
+                        <a class="dropdown-item position-sticky" routerLink="/card">Orders</a>
+                        <a class="dropdown-item position-sticky"  routerLink="/home">Privacy</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" routerLink="/home">Entertainments</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black bi bi-cart" routerLink="/cart"><strong>Cart({{itemcount()}})</strong></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-black bi bi-bag-check-fill" routerLink="/orders"><strong>Orders({{orderlist()}})</strong></a>
+                </li>
+                
+                <div class="nav-item pl-2">
+                    <a class="nav-link text-black bi bi-power" routerLink="/view"><strong>Logout</strong></a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="center bg-white ml-3 mr-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                    <img src="../../assets/images/2230866.png" class="dropdown-toggle bgimg imgedit" data-bs-toggle="dropdown"
+                        style="width:50%;height:80%">
+                    <div class="dropdown-menu  text-black" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item position-sticky" routerLink="/card">Mens</a>
+                        <a class="dropdown-item position-sticky" routerLink="/home">Womens</a>
+                        <a class="dropdown-item position-sticky" routerLink="/card">kids</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" routerLink="/home">Trend Fashion</a>
+                    </div>
+                </div>
+                <div class="dropdown col-sm-2 col-md-2 col-lg-2">
+                    <img src="../../assets/images/appliances.png" class="dropdown-toggle bgimg imgedit"  data-bs-toggle="dropdown"
+                        style="width:50%;height:80%">
+                    <div class="dropdown-menu  text-black" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item position-sticky" routerLink="/card">Tv</a>
+                        <a class="dropdown-item position-sticky" routerLink="/home">AC</a>
+                        <a class="dropdown-item position-sticky" routerLink="/card">Tables</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" routerLink="/home">Best Sale</a>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                    <img src="../../assets/images/decor.png" class="dropdown-toggle bgimg imgedit" data-bs-toggle="dropdown"
+                        style="width:50%;height:80%">
+                    <div class="dropdown-menu  text-black" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item position-sticky" routerLink="/card">Window screen</a>
+                        <a class="dropdown-item position-sticky" routerLink="/home">Wall Stickers</a>
+                        <a class="dropdown-item position-sticky" routerLink="/card">Flowers</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" routerLink="/home">Best Decorations</a>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                    <img src="../../assets/images/electro.png" alt="" style="width:50%;height:80%"
+                        data-bs-toggle="dropdown" class="dropdown-toggle bgimg imgedit"> 
+                    <div class="dropdown-menu  text-black" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item position-sticky" routerLink="/card">Mobiles</a>
+                        <a class="dropdown-item position-sticky" routerLink="/home">Smart Watches</a>
+                        <a class="dropdown-item position-sticky" routerLink="/card">Laptops</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" routerLink="/home">Upcoming Offers</a>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                    <img src="../../assets/images/toys.png" alt="" style="width:50%;height:80%"
+                        data-bs-toggle="dropdown"  class="dropdown-toggle bgimg imgedit">
+                    <div class="dropdown-menu  text-black" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item position-sticky" routerLink="/card">2-5yr Toys</a>
+                        <a class="dropdown-item position-sticky" routerLink="/home">Knowlegde</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" routerLink="/home">Offers Zone</a>
+                    </div>
+
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 dropdown">
+                    <img src="../../assets/images/toys.png" alt="" style="width:50%;height:80%"
+                        data-bs-toggle="dropdown"  class="dropdown-toggle bgimg imgedit">
+                    <div class="dropdown-menu  text-black" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item position-sticky" routerLink="/card">Mens</a>
+                        <a class="dropdown-item position-sticky" routerLink="/home">Womens</a>
+                        <a class="dropdown-item position-sticky" routerLink="/card">kids</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" routerLink="/home">Trend Fashion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+
+</html>

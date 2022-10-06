@@ -1,0 +1,22 @@
+.bgimg:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+    display: block;
+  }
+  .bgg {
+    background: linear-gradient(to right, #fffb00,  #ea5bbf);
+}
+
+
+.imgedit{
+  width:50%;
+  height:80%
+}
+
+@media (max-width:999px){
+  .imgedit{
+    width:20%;
+    height:50%
+  }
+  
+}

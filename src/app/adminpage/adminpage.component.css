@@ -1,0 +1,15 @@
+.bgg {
+    background: linear-gradient(to right, #00c6e5,  #ea5bbf);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+
+@media only screen and (max-width: 900px) {
+    .widthchange{
+        width: 200px;
+    }
+
+}
+

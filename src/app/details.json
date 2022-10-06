@@ -1,0 +1,96 @@
+{
+  "posts": [
+    {
+      "name": "sxsax",
+      "email": "fvfv",
+      "number": "32e32",
+      "address": "f322",
+      "city": "coim",
+      "state": "fv",
+      "img": "C:\\fakepath\\3rd1.jpg",
+      "id": 28
+    },
+    {
+      "name": "sxsax",
+      "email": "fvfv",
+      "number": "32e32",
+      "address": "f322",
+      "city": "32f32",
+      "state": "fv",
+      "img": "C:\\fakepath\\3rd1.jpg",
+      "id": 29
+    },
+    {
+      "name": "qwqw",
+      "email": "saxs",
+      "number": "sxs",
+      "address": "saxs",
+      "city": "saxax",
+      "state": "sxsax",
+      "img": "../../assets/images/1st2.webp",
+      "id": 30
+    },
+    {
+      "name": "zxzx",
+      "email": "axa",
+      "number": "axa",
+      "address": "scs",
+      "city": "sc",
+      "state": "sc",
+      "id": 39
+    },
+    {
+      "name": "Aakash",
+      "email": "admin",
+      "number": "sx",
+      "address": "fvfdsv",
+      "city": "ve",
+      "state": "rfw",
+      "id": 40
+    },
+    {
+      "name": "aakash",
+      "price": "34567",
+      "details": "best",
+      "description": "offers",
+      "id": 41
+    },
+    {
+      "name": "redmi",
+      "price": "18000",
+      "details": "best processer",
+      "description": "64mp pixels",
+      "id": 42
+    },
+    {
+      "name": "redmi",
+      "price": "18000",
+      "details": "best processer",
+      "description": "64mp pixels",
+      "id": 43
+    },
+    {
+      "name": "sxs",
+      "img": "../../assets/images/1st2.webp",
+      "id": 47
+    },
+    {
+      "name": "redmi 10pro 5G",
+      "price": "22000",
+      "details": "product",
+      "description": "best sale",
+      "img": "../../assets/images/1st2.webp\"",
+      "spectification": "good ",
+      "id": 48
+    },
+    {
+      "name": "new mobile",
+      "price": "76667",
+      "details": "vjsdavcdac",
+      "description": "dcdsvc",
+      "img": "../../assets/images/1st2.webp",
+      "spectification": "ascasc",
+      "id": 49
+    }
+  ]
+}
